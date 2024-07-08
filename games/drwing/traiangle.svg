@@ -1,0 +1,5 @@
+<div class="container">
+    <svg id="triangle" viewBox="0 0 100 100"  width="16" height="16">
+            <polygon points="50 15, 100 100, 0 100" stroke="black"  fill="none"/>
+    </svg>
+ </div>   

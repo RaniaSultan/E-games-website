@@ -1,0 +1,24 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    position: relative;
+}
+
+#board {
+    /* background-color: skyblue; */
+    background-image: url("./flappybirdbg.png");
+}
+#score
+{
+display: none;
+margin: auto;
+position: absolute;
+width: 200px;
+height: 150px;
+border: 2px solid rgb(13, 96, 165);
+color: rgb(222, 211, 176);
+border-radius: 10px;
+background-color: #5bbec9;
+top: 35%;
+left: 42%;
+}

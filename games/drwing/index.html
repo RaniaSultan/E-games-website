@@ -1,0 +1,95 @@
+<!DOCTYPE>
+<html>
+
+<head>
+
+    <title>Drawing App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+
+        <section class="tool-bord">
+            <div class="row">
+                <label>Shapes</label>
+                <ul class="options">
+                    <li class="draw-option tool" id="Rectangle">
+                        <i class="fa-regular fa-square"></i>
+                        <span>Rectangle</span>
+                    </li>
+                    <li class="draw-option tool" id="Circle">
+                        <i class="fa-regular fa-circle"></i>
+                        <span>Circle</span>
+                    </li>
+                    <li class="draw-option tool" id="Traingle">
+                        <i ><svg id="triangle" viewBox="0 0 100 100"  width="16" height="16">
+                            <polygon points="50 15, 100 100, 0 100" stroke="black"  fill="none"/>
+                    </svg></i>
+                        <span>Traingle</span>
+                    </li>
+                    <li class="draw-option tool" id="line">
+                        <i ><svg id="line" viewBox="0 0 100 100" width="16" height="16">
+                            <line x1="10" y1="90" x2="90" y2="10" stroke="black" fill="none"  strok/>
+                        </svg>
+                        </i>
+                        <span>Line</span>
+                    </li>
+                    
+                    
+                    <li class="draw-option " id="">
+                        <input type="checkbox" name="fill-color" id="fill-color">
+                        <label for="fill-color" class="fill-label">Fill Color</label>
+                    </li>
+                   
+                </ul>
+            </div>
+            <div class="row">
+                <label>Options</label>
+                <ul class="options">
+                    <li class="draw-option active tool" id="bruch">
+                        <i class="active fa-solid fa-paintbrush " id=""></i>
+                        <span>bruch</span>
+                    </li>
+                    <li class="draw-option tool" id="Eraser">
+                        <i class="fa-solid fa-eraser"></i>
+                        <span>Eraser</span>
+                    </li>
+                    <li class="draw-option">
+                        <input type="range" name="size-slider" id="size-slider" min="1" max="30" value="4">
+                    </li>
+                </ul>
+            </div>
+            <div class="row">
+                <label>Colors</label>
+                <ul class="options colors">
+                    <li class="draw-option selected" id="">
+                    </li>
+                    <li class="draw-option" id="">
+                    </li>
+                    <li class="draw-option">
+                    </li>
+                    <li class="draw-option">
+                        <input type="color" name="" id="color-picker" value="#ffffff">
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="row buttons">
+               <button class="clear-canvas">Clear Canvas</button>
+               <button class="save-img">Save as image</button>
+            </div>
+        </section>
+
+        <section class="drawing-area">
+<canvas id="canvas"></canvas>
+        </section>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+
+#board
+{
+    border: 2px solid purple;
+    width: 410px;
+    height: 410px;
+    margin: auto;
+    margin-top:1%;
+    display: flex;
+    flex-wrap: wrap;
+    /* position: absolute; */
+}
+#full
+{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    margin-top:7%;
+}
+#h11{
+    width: 400px;
+  
+    text-align: center;
+    color: darkblue;
+    margin: auto;
+}
+#board img
+{
+    width: 80px;
+    width: 80px;
+    border: 1px solid rgb(243, 227, 245);
+}
+#pieces
+{
+    border: 1px solid purple;
+    width: 1053px;
+    height: 162px;
+    margin: auto;
+    margin-top:2%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+#pieces img
+{
+    width: 79px;
+    width: 79px;
+    border: 1px solid rgb(237, 174, 243);
+    color: darkblue;
+}
+#message
+{
+    position: absolute;
+    top:25%;
+    left: 539px;
+    width: 230px;
+    height: 110px;
+    background-color:  rgba(255, 255, 255, 0.904);
+    display: none;
+
+}

@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+body
+{
+    background-color: #273238;
+   
+}
+section
+{
+    position: relative;
+    display: flex;
+     justify-content: center;
+     height: 100vh;
+     width: 70%;
+     left: 15%;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     z-index: 99;
+}
+.form{
+    top:10%;
+    border: 1px solid white;
+    /* background-color: white; */
+    height: 80%;
+    width: 60%;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    
+
+}
+.form h1{
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-bottom: 3%;
+    padding: 5px;
+    color: #ebac18;
+    font-weight: 700;
+    font-size: 3em;
+    width: 35%;
+    border-bottom: 4px solid #ebac18;
+}
+.form form
+{
+    margin-left: 20%;
+    padding-bottom: 3%;
+}
+.form form .input
+{
+    color: rgb(148, 145, 145);
+  width: 100%;
+    padding-bottom: 3%;
+}
+
+
+
+.remember
+{
+    padding-bottom: 3%;
+    color: rgb(148, 145, 145);
+    padding-left: 1px;
+}
+.img
+{ top:10%;
+    height: 80%;
+    width: 80%;
+    position: relative;
+}
+.img img
+{
+    height: 100%;
+    width: 100%;
+}
+.form form .input span
+{
+display: inline-block;
+width: 100%;
+padding-bottom:5px ;
+color: rgb(148, 145, 145);
+}
+.form form .input input
+{
+display: inline-block;
+width: 80%;
+padding-bottom:5px ;
+border: 2px solid  rgb(168, 168, 168);
+border-radius: 20px;
+padding: 10px;
+
+}
+.form form .input input[type="submit"]
+{
+color:  rgb(255, 255, 255);
+font-weight: 500;
+cursor: pointer;
+background-color: #273238;
+border-color: #ffffff;
+
+
+}
+.form form .input input[type="submit"]:hover
+{
+    background-color: #ebac18;
+    border-color: #ebac18;
+
+}
+.form form .input p a
+{
+    color: #ebac18;
+   
+
+}
+

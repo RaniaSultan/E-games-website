@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginStylesheet.css">
+    <title>login</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="img">
+            <img src="images/Gaming.gif" alt="" srcset="">
+        </div>
+     
+        <div class="form">
+            <h1>Login</h1>
+            <form action="index.html" method="post" id="myForm">
+                <div class="input">
+                    <span>User Name</span>
+                    <input type="text" name="userName" id="username" required>
+                </div>
+                <div class="input">
+                    <span>Password</span>
+                    <input type="password" name="pass" id="password" required>
+                </div>
+                <div id="error-message" style="color: red;"></div>
+                <div class="remember">
+                    <label for="remember">Remember Me <input type="checkbox" name="remember" id="remember"></label>
+                </div>
+                <div class="input">
+                    <input type="submit" value="Sign In">
+                   
+                </div>
+                <div class="input">
+                    <p>Don't have an account? <a href="register.html">Sign Up</a></p>
+                   
+                </div>
+            </form>
+        </div>
+      
+
+    </section>
+<script src="loginScrippt.js"></script>
+</body>
+
+</html>

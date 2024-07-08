@@ -1,0 +1,190 @@
+*
+{
+ padding: 0px;
+
+    box-sizing: border-box;
+}
+.clear
+{
+    clear: both;
+}
+body
+{
+    background-color: lightseagreen;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* tool bord css */
+.tool-bord
+{
+    position: absolute;
+    top:10%;
+    left: 10%;
+    width: 20%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1%;
+}
+.options
+{
+    list-style-type: none;
+}
+#Traingle svg, #line svg
+{
+    stroke-width: 10px;
+    font-weight: bolder;
+}
+
+.colors
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.draw-option
+{
+    margin-bottom: 5px;
+   
+}
+.row .options .draw-option
+{
+    cursor: pointer;
+}
+.draw-option :where(span,label){
+    color: #5A6168;
+    padding-left: 5px;
+}
+
+.draw-option:is(:hover ,.active) :where(span,label){
+    color: lightseagreen;
+    padding-left: 5px;
+    /* stroke: lightseagreen; */
+}
+#active{
+    color: lightseagreen;
+}
+.draw-option:hover
+{
+     color: lightseagreen;
+}
+.draw-option i:hover
+{
+    color: lightseagreen;
+}
+.draw-option:hover svg polygon
+{
+    stroke: lightseagreen;
+ 
+}
+.colors .draw-option
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #b7bdc4;
+    
+}
+.colors .draw-option:hover
+{
+   scale: 1.2;
+    
+}
+
+.colors .draw-option:nth-child(4)
+{
+    background-color: #fff;
+}
+.colors .draw-option:nth-child(3)
+{
+    background-color: lightseagreen;
+}
+.colors .draw-option:nth-child(2)
+{
+    background-color: red;
+}
+.colors .draw-option:nth-child(1)
+{
+    background-color: black; 
+}
+.draw-option #color-picker
+{
+    opacity: 0;
+    cursor: pointer;
+}
+input[type="checkbox"]
+{
+    width: 16px;
+    height: 16px;
+    padding: 0px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+#fill-color:checked ~ label
+{
+    color:lightseagreen;
+}
+.fill-label
+{
+    cursor: pointer;
+}
+input[type="range"]
+{
+    width: 100%;
+    height: 10px;
+    accent-color:lightseagreen;
+background: #fff;
+    border-color: lightseagreen;
+    color: #fff;
+    /* background: transparent;
+    outline: none; */
+
+}
+.buttons button
+{
+width: 100%;
+color: #fff;
+padding: 10px 0px;
+margin-bottom: 10px ;
+border-radius: 5px;
+}
+.buttons .clear-canvas
+{
+    color: lightseagreen;
+    border:1px solid  lightseagreen;
+}
+.buttons .save-img
+{
+    color: lightseagreen;
+    border:1px solid  lightseagreen;
+}
+.buttons .clear-canvas:hover
+{
+    transition: background-color 1s, color 0.2s;
+    color: #fff;
+    background-color: lightseagreen;
+    border:1px solid  lightseagreen;
+}
+.buttons .save-img:hover
+{
+    transition: background-color 1s, color 0.2s;
+    color: #fff;
+    background-color: lightseagreen;
+    border:1px solid  lightseagreen;
+}
+/* drawing area css*/
+.drawing-area
+{
+    position: absolute;
+    top:10%;
+    right: 10%;
+    width: 59%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 20px;
+    
+}
+canvas
+{
+    width: 100%;
+    height: 100%;
+}
